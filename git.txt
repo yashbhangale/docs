@@ -1,0 +1,18 @@
+
+
+Remote add 
+>> git remote add origin https://github.com/yashbhangale/react-todo-app
+
+create a new branch 
+>> git checkout -b yash
+
+add all files 
+>> git add .
+
+push into branch
+>> git push -u origin yash
+ 
+see branches
+>> git branch -a
+* master
+

@@ -1,0 +1,8 @@
+1. pull command
+
+sudo docker pull <image name>
+
+2. run command 
+
+sudo docker run -d --name jenkins -p 8080:8080 jenkins/jenkins
+
