@@ -1,3 +1,7 @@
+set personal access token () go to setting and developer setting > personal access tokens > tokens classic
+
+>> git remote set-url origin https://<token>@github.com/<username>/<repo>
+>> example >> git remote set-url origin https://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@github.com/yashbhangale/docs 
 
 
 Remote add 

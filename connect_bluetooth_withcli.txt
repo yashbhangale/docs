@@ -1,0 +1,21 @@
+sudo systemctl status bluetooth
+
+hciconfig
+
+bluetoothctl
+
+  sudo rfkill unblock all
+  
+  power on
+
+  scan on
+
+  devices # list all devices
+
+  pair <device name >
+
+  connect <device name >
+
+  trust   <device name >
+
+  exit
