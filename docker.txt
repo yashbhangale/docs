@@ -6,3 +6,4 @@ sudo docker pull <image name>
 
 sudo docker run -d --name jenkins -p 8080:8080 jenkins/jenkins
 
+sudo docker run -p 3000:3000 -v "$(pwd):/app" geeksdirectory
