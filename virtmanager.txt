@@ -1,0 +1,27 @@
+1. Verify the libvirt service is running:
+>> sudo systemctl status libvirtd
+
+2. If it's not running, start it with:
+>> sudo systemctl start libvirtd
+
+3. Check user permissions:
+>> sudo usermod -aG libvirt $(whoami)
+
+
+
+sudo chown root:libvirt /var/run/libvirt/libvirt-sock
+sudo chmod 770 /var/run/libvirt/libvirt-sock
+
+
+sudo chown username:username /var/run/libvirt/libvirt-sock
+
+sudo apt update
+sudo apt install -y qemu-system-x86 libvirt-daemon-system libvirt-clients virt-manager bridge-utils
+
+
+
+yash@boii ~> sudo systemctl daemon-reload
+yash@boii ~> sudo systemctl start libvirtd
+
+yash@boii ~> sudo systemctl enable libvirtd
+
