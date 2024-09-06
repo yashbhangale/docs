@@ -31,3 +31,15 @@ sudo docker run -d --name jenkins -p 8080:8080 jenkins/jenkins
 ```
 sudo docker run -p 3000:3000 -v "$(pwd):/app" -v /app/node_modules geeksdirectory
 ```
+### publish docker image to dockerhub
+```
+# Step 1: Log in to Docker Hub
+docker login
+
+# Step 2: Tag the Docker image
+docker tag my-vite-app yourusername/my-vite-app:latest
+
+# Step 3: Push the Docker image to Docker Hub
+docker push yourusername/my-vite-app:latest
+
+```
